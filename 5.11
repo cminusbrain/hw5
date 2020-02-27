@@ -1,0 +1,47 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    char c;
+    int n1, n2;
+    std::cin >> c >> n1 >> n2;
+    switch (c)
+    {
+        case 'N': switch (n1 + n2)
+        {
+            case 1: c = 'W'; break;
+            case 2: c = 'S'; break;
+            case 3: c = 'E'; break;
+            case -1: c = 'E'; break;
+            case -2: c = 'S'; break;
+        } break;
+        case 'E': switch (n1 + n2)
+        {
+            case 1: c = 'N'; break;
+            case 2: c = 'W'; break;
+            case 3: c = 'S'; break;
+            case -1: c = 'S'; break;
+            case -2: c = 'W'; break;
+        } break;
+        case 'S': switch (n1 + n2)
+        {
+            case 1: c = 'E'; break;
+            case 2: c = 'N'; break;
+            case 3: c = 'W'; break;
+            case -1: c = 'W'; break;
+            case -2: c = 'N'; break;
+        } break;
+        case 'W': switch (n1 + n2)
+        {
+            case 1: c = 'S'; break;
+            case 2: c = 'E'; break;
+            case 3: c = 'N'; break;
+            case -1: c = 'N'; break;
+            case -2: c = 'E'; break;
+        } break;
+    }
+    std::cout << c;
+    return 0;
+}
