@@ -1,0 +1,35 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    int d, m;
+    std::cin >> d >> m;
+    d = d - 1;
+    if (d == 0)
+    {
+        m = m - 1;
+        if (m == 0)
+        {
+            m = 12;
+        }
+        switch (m)
+        {
+            case 1: std::cout << (d = 31); break;
+            case 2: std::cout << (d = 28); break;
+            case 3: std::cout << (d = 31); break;
+            case 4: std::cout << (d = 30); break;
+            case 5: std::cout << (d = 31); break;
+            case 6: std::cout << (d = 30); break;
+            case 7: std::cout << (d = 31); break;
+            case 8: std::cout << (d = 31); break;
+            case 9: std::cout << (d = 30); break;
+            case 10: std::cout << (d = 31); break;
+            case 11: std::cout << (d = 30); break;
+            case 12: std::cout << (d = 31); break;
+        }
+    }
+    std::cout << d << m;
+    return 0;
+}
