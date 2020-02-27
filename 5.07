@@ -1,0 +1,19 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    int n;
+    double m;
+    std::cin >> n >> m;
+    switch (n)
+    {
+        case 1: std::cout << m; break;
+        case 2: std::cout << m / 1000000; break;
+        case 3: std::cout << m / 1000; break;
+        case 4: std::cout << m * 1000; break;
+        case 5: std::cout << m * 100; break;
+    }
+    return 0;
+}
