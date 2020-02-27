@@ -1,0 +1,19 @@
+#include <iostream>
+#include <ctime>
+#include <cmath>
+
+int main()
+{
+    int k;
+    std::cin >> k;
+    switch (k)
+    {
+        case 1: std::cout << "F"; break;
+        case 2: std::cout << "D"; break;
+        case 3: std::cout << "C"; break;
+        case 4: std::cout << "B"; break;
+        case 5: std::cout << "A"; break;
+    default: std::cout << "error"; break;
+    }
+    return 0;
+}
